@@ -35,5 +35,5 @@ Generate 2000 sample files:
 Generate 2000 sample files with a random directory structure and file sizes under 5 MB:
 
 ```
-./sample_files_generator.py --max 5000 -d /home/gforeman/ransomware_sim/samplefiles/ 2000 
+./sample_files_generator.py -d --max 5000 /home/gforeman/ransomware_sim/samplefiles/ 2000 
 ```
