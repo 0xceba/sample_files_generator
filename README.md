@@ -9,7 +9,7 @@ Generate sample files of type `png`, `exe`, `mp3`, `pdf`, `txt`, and `zip`. Thes
 ### Usage
 
 ```
-$ python3 sample_files_generator.py -h
+# python3 sample_files_generator.py -h
 usage: sample_files_generator.py [-h] [-d] [-m MAX] destination number_of_files
 
 Generate sample files.
@@ -28,10 +28,10 @@ optional arguments:
 
 Generate 200 sample files:
 ```
-$ python3 sample_files_generator.py ./samplefiles/ 200
+# python3 sample_files_generator.py ./samplefiles/ 200
 Sample files created successfully.
 
-$ ls --time-style=+ -lh ./samplefiles/ | head 
+# ls --time-style=+ -lh ./samplefiles/ | head 
 total 816K
 drwxr-xr-x 2 root root  12K  .
 drwxr-xr-x 5 root root 4.0K  ..
@@ -46,10 +46,10 @@ drwxr-xr-x 5 root root 4.0K  ..
 
 Generate 200 sample files with a random directory structure and file sizes under 5 MB:
 ```
-$ python3 sample_files_generator.py -d --max 5000 ./samplefiles/ 200
+# python3 sample_files_generator.py -d --max 5000 ./samplefiles/ 200
 Sample files created successfully.
 
-$ ls --time-style=+ -lh ./samplefiles/ | head 
+# ls --time-style=+ -lh ./samplefiles/ | head 
 total 77M
 drwxr-xr-x 5 root root  4.0K  .
 drwxr-xr-x 5 root root  4.0K  ..
