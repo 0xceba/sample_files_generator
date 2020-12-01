@@ -67,7 +67,7 @@ def get_file_extensions():
 def main(argv):
 	parser = argparse.ArgumentParser(description='Generate sample files.')
 	parser.add_argument('destination', help='where to generate the sample files.', type=dir_path)
-	parser.add_argument('number_of_files', help='how many test files to generate.', type=int)
+	parser.add_argument('number_of_files', help='how many sample files to generate.', type=int)
 	parser.add_argument('-d', '--dir', help='create directories.', action="store_true")
 	parser.add_argument('-m', '--max', help='set the max size in kilobytes for each file.', type=int)
 	args = parser.parse_args()
@@ -87,7 +87,7 @@ def main(argv):
 			filename = random.choice(words).replace("'", "").lower()
 
 		new_file = create_file(file_type, get_dir_destination(dir_list), filename, args.max)
-	print('Test files created successfully.')
+	print('Sample files created successfully.')
 
 if __name__ == "__main__":
    main(sys.argv[1:])
