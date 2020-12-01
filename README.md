@@ -9,14 +9,14 @@ Generate sample files of type `png`, `exe`, `mp3`, `pdf`, `txt`, and `zip`. Thes
 ### Usage
 
 ```
-./sample_files_generator.py -h
+$ python3 sample_files_generator.py -h
 usage: sample_files_generator.py [-h] [-d] [-m MAX] destination number_of_files
 
 Generate sample files.
 
 positional arguments:
   destination        where to generate the sample files.
-  number_of_files    how many test files to generate.
+  number_of_files    how many sample files to generate.
 
 optional arguments:
   -h, --help         show this help message and exit
@@ -26,14 +26,38 @@ optional arguments:
 
 ### Usage Examples
 
-Generate 2000 sample files:
-
+Generate 200 sample files:
 ```
-./sample_files_generator.py /home/gforeman/ransomware_sim/samplefiles/ 2000
+$ python3 sample_files_generator.py ./samplefiles/ 200
+Sample files created successfully.
+
+$ ls --time-style=+ -lh ./samplefiles/ | head 
+total 816K
+drwxr-xr-x 2 root root  12K  .
+drwxr-xr-x 5 root root 4.0K  ..
+-rw-r--r-- 1 root root  130  adjectives.pdf
+-rw-r--r-- 1 root root   72  agglomerations.mp3
+-rw-r--r-- 1 root root   64  arbitrarinesss.exe
+-rw-r--r-- 1 root root    1  assiduousnesss.txt
+-rw-r--r-- 1 root root   22  assort.zip
+-rw-r--r-- 1 root root   64  asymmetry.exe
+-rw-r--r-- 1 root root   64  backbiter.exe
 ```
 
-Generate 2000 sample files with a random directory structure and file sizes under 5 MB:
-
+Generate 200 sample files with a random directory structure and file sizes under 5 MB:
 ```
-./sample_files_generator.py -d --max 5000 /home/gforeman/ransomware_sim/samplefiles/ 2000 
+$ python3 sample_files_generator.py -d --max 5000 ./samplefiles/ 200
+Sample files created successfully.
+
+$ ls --time-style=+ -lh ./samplefiles/ | head 
+total 77M
+drwxr-xr-x 5 root root  4.0K  .
+drwxr-xr-x 5 root root  4.0K  ..
+-rw-r--r-- 1 root root  2.4M  abstinences.png
+-rw-r--r-- 1 root root  4.2M  barmaid.pdf
+-rw-r--r-- 1 root root 1014K  berliners.mp3
+-rw-r--r-- 1 root root  1.1M  cannoning.exe
+-rw-r--r-- 1 root root  283K  climaxed.pdf
+-rw-r--r-- 1 root root  739K  coiffuring.txt
+drwxr-xr-x 3 root root  4.0K  curlinesss
 ```
