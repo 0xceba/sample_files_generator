@@ -61,3 +61,7 @@ drwxr-xr-x 5 root root  4.0K  ..
 -rw-r--r-- 1 root root  739K  coiffuring.txt
 drwxr-xr-x 3 root root  4.0K  curlinesss
 ```
+
+### Adding Additional File Types
+
+To add additional file types, add a file with the desired extension to `./template_files/`. The new file could be an empty text document with the appropriate file extension (ie: `touch /template_files/rar.rar`) or it could be a syntactically valid file. The template files that are shipped with this script come from https://github.com/mathiasbynens/small.
