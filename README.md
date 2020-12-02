@@ -64,4 +64,4 @@ drwxr-xr-x 3 root root  4.0K  curlinesss
 
 ### Adding Additional File Types
 
-To add additional file types, add a file with the desired extension to `./template_files/`. The new file could be an empty text document with the appropriate file extension (ie: `touch /template_files/rar.rar`) or it could be a syntactically valid file. The template files that are shipped with this script come from https://github.com/mathiasbynens/small.
+Add a file with the desired extension to `./template_files/` to generate files of additional file types. The new file could be an empty text document with the appropriate file extension (ie: `touch /template_files/rar.rar`) or it could be a syntactically valid file. The template files that are shipped with this script come from https://github.com/mathiasbynens/small.
